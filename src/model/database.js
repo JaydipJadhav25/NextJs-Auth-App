@@ -34,4 +34,4 @@ const useSchema = new  mongoose.Schema({
     timestamps : true
 })
 
-export const User = mongoose.Schema.users || mongoose.model("users" , useSchema);
+export  const User = mongoose.Schema.users || mongoose.model("users" , useSchema);
