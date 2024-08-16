@@ -50,15 +50,6 @@ export async function POST(request : NextRequest){
 
 
 
-
-
-
-
-
-
-
-
-
       return NextResponse.json({
         massage : "user Registor successfully ........",
         saveuser
