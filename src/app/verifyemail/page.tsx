@@ -35,18 +35,19 @@ const Page = () => {
     //ascess value in url from user pass
 
     useEffect(()=>{
-
         //value get in url of client side pages
-      const usertoken =   window.location.search.split("=")[1]
-  console.log("user token in url  = " , usertoken);
-      setToken(usertoken ||  " ");
+        const usertoken =   window.location.search.split("=")[1]
+        console.log("user token in url  = " , usertoken);
+        setToken(usertoken ||  " ");
+        setverify(true);
+        seterror(false);
    
 
        }, [])
 
 
        useEffect(() =>{
-
+           seterror(false)
         if(token.length > 0){
             verifyEmailUser(); // call function
         }
